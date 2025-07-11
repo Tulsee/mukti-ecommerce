@@ -11,23 +11,6 @@ export class UserService {
     this.userRepository = new UserRepository();
   }
   public async registerUser(payload: UserRegistrationPayload) {
-    const { fullName, email, password: plainPassword, role } = payload;
-
-    if (!fullName) {
-      throw new Error("Full name is required.");
-    }
-    if (!email) {
-      throw new Error("Email is required.");
-    }
-    if (!plainPassword) {
-      throw new Error("Password is required.");
-    }
-    const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
-    if (!passwordRegex.test(plainPassword)) {
-      throw new Error(
-        "Password must be at least 8 characters long and include at least one uppercase letter, one lowercase letter, one number, and one special character."
-      );
-    }
     const existingUser = await this.userRepository.findByEmail(payload.email);
 
     if (existingUser) {
