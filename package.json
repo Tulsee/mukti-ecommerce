@@ -1,0 +1,41 @@
+{
+  "name": "mukti",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/server.js",
+    "build": "tsc",
+    "dev": "nodemon --ext ts --exec ts-node src/server.ts",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:studio": "drizzle-kit studio"
+  },
+  "keywords": [],
+  "author": "Shankar Ghimire<ramtulsi022@gmail.com>",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.3",
+    "@types/morgan": "^1.9.10",
+    "@types/node": "^24.0.13",
+    "@types/pg": "^8.15.4",
+    "drizzle-kit": "^0.31.4",
+    "eslint": "^9.30.1",
+    "install": "^0.13.0",
+    "nodemon": "^3.1.10",
+    "npm": "^11.4.2",
+    "prettier": "^3.6.2",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.0",
+    "drizzle-orm": "^0.44.2",
+    "express": "^5.1.0",
+    "morgan": "^1.10.0",
+    "pg": "^8.16.3"
+  }
+}
