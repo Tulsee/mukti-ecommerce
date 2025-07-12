@@ -142,7 +142,7 @@ Content-Type: application/json
 
 The project includes:
 
-- **Multi-stage Dockerfile** for optimized production builds
+- **Dockerfile**
 - **docker-compose.yml** with PostgreSQL service
 - **Automatic migrations** on container startup
 
@@ -153,7 +153,7 @@ The project includes:
 docker-compose up --build
 
 # Start in detached mode
-docker-compose up
+docker-compose up -d
 
 # Stop services
 docker-compose down
