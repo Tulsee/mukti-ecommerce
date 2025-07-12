@@ -2,8 +2,11 @@ import express from "express";
 import morgan from "morgan";
 import cors from "cors";
 import api from "./app.routes";
+import { apiRateLimiter } from "./middlewares/rateLimiter";
 
 const app: express.Application = express();
+
+app.use(apiRateLimiter);
 
 app.use(cors());
 app.use(morgan("combined"));
