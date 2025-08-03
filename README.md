@@ -22,7 +22,7 @@
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/Tulsee/muktiTech
+   git clone https://github.com/Tulsee/mukti-ecommerce
    cd muktiTech
    ```
 2. **Environment configuration**
@@ -41,7 +41,7 @@ The API will be available at `http://localhost:8000`
 
 1. **Clone and install dependencies**
    ```bash
-   git clone https://github.com/Tulsee/muktiTech
+   git clone https://github.com/Tulsee/mukti-ecommerce
    cd muktiTech
    npm install
    ```
